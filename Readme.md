@@ -4,7 +4,7 @@
 
 # delegate
 
-Bare-bones DOM event delegation.
+Bare-bones DOM event delegation for modern browsers. IE support requires [matches polyfill].
 
 ## Install
 
@@ -31,3 +31,5 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 
 [gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/delegate.svg
 [gemnasium-url]: https://gemnasium.com/pirxpilot/delegate
+
+[matches polyfill]: https://github.com/Financial-Times/polyfill-service/tree/master/polyfills/Element/prototype/matches
