@@ -1,0 +1,30 @@
+{
+  "name": "@pirxpilot/delegate",
+  "version": "0.0.0",
+  "description": "Bare-bones DOM event delegation.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": "pirxpilot/delegate",
+  "license": "MIT",
+  "keywords": [
+    "delegate",
+    "dom",
+    "event",
+    "browser"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "~2",
+    "mocha": "~4",
+    "should": "~13"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js"
+  ]
+}
