@@ -21,12 +21,34 @@ describe('delegate', function () {
     var ul = this.ul;
     var link1 = document.querySelector('.link-1');
 
-    function handle() {
+    function handle(e) {
       this.should.eql(ul);
+      e.delegateTarget.should.eql(link1);
+      e.target.should.eql(link1);
       clicks++;
     }
 
     var h = delegate.bind(this.ul, 'li a', 'click', handle);
+
+    link1.click();
+    clicks.should.eql(1);
+
+    delegate.unbind(this.ul, 'click', h);
+  });
+
+  it('must handle events triggered on descendants when bound', function () {
+    var clicks = 0;
+    var ul = this.ul;
+    var link1 = document.querySelector('.link-1');
+
+    function handle(e) {
+      this.should.eql(ul);
+      e.delegateTarget.should.eql(link1.parentNode);
+      e.target.should.eql(link1);
+      clicks++;
+    }
+
+    var h = delegate.bind(this.ul, 'li', 'click', handle);
 
     link1.click();
     clicks.should.eql(1);
@@ -71,6 +93,5 @@ describe('delegate', function () {
 
     delegate.unbind(this.ul, 'click', h);
   });
-
 
 });

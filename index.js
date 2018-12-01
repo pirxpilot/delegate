@@ -3,10 +3,25 @@ module.exports = {
   unbind: unbind
 };
 
+/* jshint boss:true */
+
+function find(el, selector, parent) {
+  do {
+    if (el.matches(selector)) {
+      return el;
+    }
+    if (el === parent) {
+      break;
+    }
+  } while (el = el.parentNode);
+}
+
+/* jshint boss:false */
+
 function bind(el, selector, event, listener, options) {
   function handler(e) {
-    if (e.target.matches(selector)) {
-      e.delegateTarget = e.target;
+    e.delegateTarget = find(e.target, selector, el);
+    if (e.delegateTarget) {
       listener.call(el, e);
     }
   }
