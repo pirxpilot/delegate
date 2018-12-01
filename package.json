@@ -1,6 +1,6 @@
 {
   "name": "@pirxpilot/delegate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bare-bones DOM event delegation.",
   "author": {
     "name": "Damian Krzeminski",
