@@ -13,7 +13,7 @@ function find(el, selector, parent) {
     if (el === parent) {
       break;
     }
-  } while (el = el.parentNode);
+  } while (el = el.parentElement);
 }
 
 /* jshint boss:false */
