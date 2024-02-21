@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
 
 # delegate
 
@@ -23,13 +23,13 @@ var delegate = require('@pirxpilot/delegate');
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/@pirxpilot/delegate.svg
+[npm-image]: https://img.shields.io/npm/v/@pirxpilot/delegate
 [npm-url]: https://npmjs.org/package/@pirxpilot/delegate
 
-[travis-url]: https://travis-ci.org/pirxpilot/delegate
-[travis-image]: https://img.shields.io/travis/pirxpilot/delegate.svg
+[build-url]: https://github.com/pirxpilot/delegate/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/delegate/check.yaml?branch=main
 
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/delegate.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/delegate
+[deps-image]: https://img.shields.io/librariesio/release/npm/@pirxpilot/delegate
+[deps-url]: https://libraries.io/npm/@pirxpilot%2Fdelegate
 
 [matches polyfill]: https://github.com/Financial-Times/polyfill-service/tree/master/polyfills/Element/prototype/matches

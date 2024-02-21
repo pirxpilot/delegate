@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/delegate",
+  "repository": "github:pirxpilot/delegate",
   "license": "MIT",
   "keywords": [
     "delegate",
