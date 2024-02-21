@@ -1,3 +1,4 @@
+const { describe, it, beforeEach } = require('node:test');
 var delegate = require('../');
 
 var html = [
