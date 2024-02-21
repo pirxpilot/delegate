@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/delegate",
+  "repository": "github:pirxpilot/delegate",
   "license": "MIT",
   "keywords": [
     "delegate",
@@ -17,10 +17,9 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jsdom": "~11",
+    "@pirxpilot/jshint": "~3",
+    "jsdom": "~24",
     "jsdom-global": "~3",
-    "jshint": "~2",
-    "mocha": "~4",
     "should": "~13"
   },
   "scripts": {

@@ -1,6 +1,6 @@
 module.exports = {
-  bind: bind,
-  unbind: unbind
+  bind,
+  unbind
 };
 
 /* jshint boss:true */
