@@ -1,5 +1,5 @@
-const test = require('node:test');
-const delegate = require('../');
+import test from 'node:test';
+import delegate from '../index.js';
 
 const html = `
   <ul id="first">
