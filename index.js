@@ -3,8 +3,6 @@ module.exports = {
   unbind
 };
 
-/* jshint boss:true */
-
 function find(el, selector, parent) {
   do {
     if (el.matches(selector)) {
@@ -13,10 +11,8 @@ function find(el, selector, parent) {
     if (el === parent) {
       break;
     }
-  } while (el = el.parentElement);
+  } while ((el = el.parentElement));
 }
-
-/* jshint boss:false */
 
 function bind(el, selector, event, listener, options) {
   function handler(e) {
@@ -28,7 +24,6 @@ function bind(el, selector, event, listener, options) {
   el.addEventListener(event, handler, options);
   return handler;
 }
-
 
 function unbind(el, event, listener, options) {
   el.removeEventListener(event, listener, options);
