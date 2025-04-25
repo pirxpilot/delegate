@@ -4,7 +4,7 @@
 
 # delegate
 
-Bare-bones DOM event delegation for modern browsers. IE support requires [matches polyfill].
+Bare-bones DOM event delegation for modern browsers.
 
 ## Install
 
@@ -15,7 +15,13 @@ $ npm install --save @pirxpilot/delegate
 ## Usage
 
 ```js
-var delegate = require('@pirxpilot/delegate');
+import delegate from '@pirxpilot/delegate';
+
+// call `onOk` when '.ok` in buttons is clicked
+const handler = delegate.bind(buttons, '.ok', 'click', onOk);
+
+// remove onOk handler
+delegate.unbind(buttons, 'click', handler);
 
 ```
 
@@ -31,5 +37,3 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 
 [deps-image]: https://img.shields.io/librariesio/release/npm/@pirxpilot/delegate
 [deps-url]: https://libraries.io/npm/@pirxpilot%2Fdelegate
-
-[matches polyfill]: https://github.com/Financial-Times/polyfill-service/tree/master/polyfills/Element/prototype/matches
